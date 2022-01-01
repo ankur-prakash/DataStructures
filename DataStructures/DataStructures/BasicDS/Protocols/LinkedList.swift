@@ -8,10 +8,6 @@
 
 import Foundation
 
-public protocol DoublyLinkList: LinkedList {
-    
-}
-
 public protocol LinkedList {
     associatedtype Element
     mutating func push(_ value: Element)

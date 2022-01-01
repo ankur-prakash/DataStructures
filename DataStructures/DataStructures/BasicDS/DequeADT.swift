@@ -8,39 +8,29 @@
 
 import Foundation
 
-public struct Deque<Element> {
+public struct DequeADT<Element> {
     
     private var _doublyLinkedList = DoublyLinkedListADT<Element>()
     public init() {}
 }
 
-extension Deque: LinkedList {
+extension DequeADT: Deque {
+
+    public mutating func enqueue(_ value: Element) {
+        _doublyLinkedList.append(value)
+    }
     
+    public mutating func dequeue() -> Element? {
+        _doublyLinkedList.pop()
+    }
     public var peek: Element? { _doublyLinkedList.peek }
-    public var isEmpty: Bool { _doublyLinkedList.isEmpty }
+    public var isEmpty: Bool  { _doublyLinkedList.isEmpty }
     
-    
-    public func push(_ value: Element) {
-        
+    public mutating func insertFront(_ value: Element) {
+        _doublyLinkedList.push(value)
     }
     
-    public func pop() -> Element? {
-        return nil
+    public mutating func removeRear() -> Element? {
+        _doublyLinkedList.removeLast()
     }
-    
-    public func append(_ value: Element) {
-        
-    }
-    public func insert(_ value: Element, at index: Int) {
-        
-    }
-    
-    public func removeLast() -> Element? {
-        return nil
-    }
-    
-    public func removeNode(at index: Int) -> Element? {
-        return nil
-    }
-    
 }

@@ -77,7 +77,7 @@ extension DoublyLinkedListADT: LinkedList {
         node.next = newNode
         newNode.next?.prev = newNode
     }
-    
+    ///- Complexity: O(1)
     public mutating func removeLast() -> Element? {
         guard !isEmpty else {
             return nil
@@ -86,14 +86,12 @@ extension DoublyLinkedListADT: LinkedList {
             return pop()
         }
         defer {
-            var current = _head
-            var prev = _head
-            while current?.next != nil {
-                prev = current
-                current = current?.next
+            _tail = _tail?.prev
+            if _tail == nil {
+                _head = nil
+            } else {
+                _tail?.next = nil
             }
-            prev?.next = nil
-            _tail = prev
         }
         return _tail?.value
     }
