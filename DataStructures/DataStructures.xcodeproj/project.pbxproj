@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0989137627800E6B0075A162 /* Vertex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0989137527800E6B0075A162 /* Vertex.swift */; };
+		0989137827800FEA0075A162 /* Edge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0989137727800FEA0075A162 /* Edge.swift */; };
+		0989137A2780121D0075A162 /* EdgeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098913792780121D0075A162 /* EdgeType.swift */; };
+		0989137C278012950075A162 /* Graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0989137B278012950075A162 /* Graph.swift */; };
+		0989137E278018400075A162 /* AdjacencyList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0989137D278018400075A162 /* AdjacencyList.swift */; };
+		098913802780184B0075A162 /* AdjacencyMatrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0989137F2780184B0075A162 /* AdjacencyMatrix.swift */; };
+		0989138227801A750075A162 /* GraphUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0989138127801A750075A162 /* GraphUtils.swift */; };
 		09B9F1E9245A643500FC417E /* DataStructures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09B9F1DF245A643500FC417E /* DataStructures.framework */; };
 		09B9F1EE245A643500FC417E /* DataStructuresTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B9F1ED245A643500FC417E /* DataStructuresTests.swift */; };
 		09B9F1F0245A643500FC417E /* DataStructures.h in Headers */ = {isa = PBXBuildFile; fileRef = 09B9F1E2245A643500FC417E /* DataStructures.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -23,6 +30,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0989137527800E6B0075A162 /* Vertex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vertex.swift; sourceTree = "<group>"; };
+		0989137727800FEA0075A162 /* Edge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Edge.swift; sourceTree = "<group>"; };
+		098913792780121D0075A162 /* EdgeType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdgeType.swift; sourceTree = "<group>"; };
+		0989137B278012950075A162 /* Graph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Graph.swift; sourceTree = "<group>"; };
+		0989137D278018400075A162 /* AdjacencyList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdjacencyList.swift; sourceTree = "<group>"; };
+		0989137F2780184B0075A162 /* AdjacencyMatrix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdjacencyMatrix.swift; sourceTree = "<group>"; };
+		0989138127801A750075A162 /* GraphUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphUtils.swift; sourceTree = "<group>"; };
 		09B9F1DF245A643500FC417E /* DataStructures.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DataStructures.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		09B9F1E2245A643500FC417E /* DataStructures.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataStructures.h; sourceTree = "<group>"; };
 		09B9F1E3245A643500FC417E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -50,6 +64,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0989137427800E5D0075A162 /* Graph */ = {
+			isa = PBXGroup;
+			children = (
+				0989137527800E6B0075A162 /* Vertex.swift */,
+				0989137727800FEA0075A162 /* Edge.swift */,
+				098913792780121D0075A162 /* EdgeType.swift */,
+				0989137B278012950075A162 /* Graph.swift */,
+			);
+			path = Graph;
+			sourceTree = "<group>";
+		};
 		09B9F1D5245A643500FC417E = {
 			isa = PBXGroup;
 			children = (
@@ -72,6 +97,10 @@
 			isa = PBXGroup;
 			children = (
 				09B9F1E2245A643500FC417E /* DataStructures.h */,
+				0989138127801A750075A162 /* GraphUtils.swift */,
+				0989137D278018400075A162 /* AdjacencyList.swift */,
+				0989137F2780184B0075A162 /* AdjacencyMatrix.swift */,
+				0989137427800E5D0075A162 /* Graph */,
 				09B9F1E3245A643500FC417E /* Info.plist */,
 			);
 			path = DataStructures;
@@ -148,6 +177,7 @@
 				TargetAttributes = {
 					09B9F1DE245A643500FC417E = {
 						CreatedOnToolsVersion = 11.4;
+						LastSwiftMigration = 1250;
 					};
 					09B9F1E7245A643500FC417E = {
 						CreatedOnToolsVersion = 11.4;
@@ -195,6 +225,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0989137C278012950075A162 /* Graph.swift in Sources */,
+				0989137827800FEA0075A162 /* Edge.swift in Sources */,
+				0989137627800E6B0075A162 /* Vertex.swift in Sources */,
+				0989138227801A750075A162 /* GraphUtils.swift in Sources */,
+				0989137E278018400075A162 /* AdjacencyList.swift in Sources */,
+				0989137A2780121D0075A162 /* EdgeType.swift in Sources */,
+				098913802780184B0075A162 /* AdjacencyMatrix.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +377,7 @@
 		09B9F1F4245A643500FC417E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = AQQ3JS45F5;
@@ -356,6 +394,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ankurprakash.DataStructures;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -364,6 +403,7 @@
 		09B9F1F5245A643500FC417E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = AQQ3JS45F5;
@@ -388,6 +428,7 @@
 		09B9F1F7245A643500FC417E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AQQ3JS45F5;
 				INFOPLIST_FILE = DataStructuresTests/Info.plist;
@@ -406,6 +447,7 @@
 		09B9F1F8245A643500FC417E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AQQ3JS45F5;
 				INFOPLIST_FILE = DataStructuresTests/Info.plist;
