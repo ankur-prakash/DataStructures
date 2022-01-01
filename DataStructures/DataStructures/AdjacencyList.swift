@@ -40,3 +40,15 @@ extension AdjacencyList: Graph {
         adjacencies[source]?.first(where: { $0.destination == destination })?.weight
     }
 }
+
+
+extension AdjacencyList: GraphTraversal {
+    
+    public func breathFirstSearch(from source: Vertex<Element>) -> [Vertex<Element>] {
+        return[]
+    }
+    
+    public func depthFirstSearch(from source: Vertex<Element>) -> [Vertex<Element>] {
+        return []
+    }
+}

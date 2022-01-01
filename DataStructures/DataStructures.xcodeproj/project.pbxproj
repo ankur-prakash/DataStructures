@@ -14,6 +14,16 @@
 		0989137E278018400075A162 /* AdjacencyList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0989137D278018400075A162 /* AdjacencyList.swift */; };
 		098913802780184B0075A162 /* AdjacencyMatrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0989137F2780184B0075A162 /* AdjacencyMatrix.swift */; };
 		0989138227801A750075A162 /* GraphUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0989138127801A750075A162 /* GraphUtils.swift */; };
+		09891384278032E80075A162 /* GraphTraversal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09891383278032E80075A162 /* GraphTraversal.swift */; };
+		098913872780380C0075A162 /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098913862780380C0075A162 /* LinkedList.swift */; };
+		09891389278038120075A162 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09891388278038120075A162 /* Queue.swift */; };
+		0989138B278038180075A162 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0989138A278038180075A162 /* Stack.swift */; };
+		0989138D278038200075A162 /* StackADT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0989138C278038200075A162 /* StackADT.swift */; };
+		0989138F278038270075A162 /* LinkedListADT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0989138E278038270075A162 /* LinkedListADT.swift */; };
+		098913912780382D0075A162 /* QueueADT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098913902780382D0075A162 /* QueueADT.swift */; };
+		0989139327803A400075A162 /* Deque.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0989139227803A400075A162 /* Deque.swift */; };
+		0989139527803A480075A162 /* DequeADT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0989139427803A480075A162 /* DequeADT.swift */; };
+		0989139727803A530075A162 /* DoublyLinkedListADT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0989139627803A530075A162 /* DoublyLinkedListADT.swift */; };
 		09B9F1E9245A643500FC417E /* DataStructures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09B9F1DF245A643500FC417E /* DataStructures.framework */; };
 		09B9F1EE245A643500FC417E /* DataStructuresTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B9F1ED245A643500FC417E /* DataStructuresTests.swift */; };
 		09B9F1F0245A643500FC417E /* DataStructures.h in Headers */ = {isa = PBXBuildFile; fileRef = 09B9F1E2245A643500FC417E /* DataStructures.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -37,6 +47,16 @@
 		0989137D278018400075A162 /* AdjacencyList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdjacencyList.swift; sourceTree = "<group>"; };
 		0989137F2780184B0075A162 /* AdjacencyMatrix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdjacencyMatrix.swift; sourceTree = "<group>"; };
 		0989138127801A750075A162 /* GraphUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphUtils.swift; sourceTree = "<group>"; };
+		09891383278032E80075A162 /* GraphTraversal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphTraversal.swift; sourceTree = "<group>"; };
+		098913862780380C0075A162 /* LinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
+		09891388278038120075A162 /* Queue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
+		0989138A278038180075A162 /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
+		0989138C278038200075A162 /* StackADT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackADT.swift; sourceTree = "<group>"; };
+		0989138E278038270075A162 /* LinkedListADT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedListADT.swift; sourceTree = "<group>"; };
+		098913902780382D0075A162 /* QueueADT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueADT.swift; sourceTree = "<group>"; };
+		0989139227803A400075A162 /* Deque.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deque.swift; sourceTree = "<group>"; };
+		0989139427803A480075A162 /* DequeADT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DequeADT.swift; sourceTree = "<group>"; };
+		0989139627803A530075A162 /* DoublyLinkedListADT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoublyLinkedListADT.swift; sourceTree = "<group>"; };
 		09B9F1DF245A643500FC417E /* DataStructures.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DataStructures.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		09B9F1E2245A643500FC417E /* DataStructures.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataStructures.h; sourceTree = "<group>"; };
 		09B9F1E3245A643500FC417E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -71,8 +91,33 @@
 				0989137727800FEA0075A162 /* Edge.swift */,
 				098913792780121D0075A162 /* EdgeType.swift */,
 				0989137B278012950075A162 /* Graph.swift */,
+				09891383278032E80075A162 /* GraphTraversal.swift */,
 			);
 			path = Graph;
+			sourceTree = "<group>";
+		};
+		09891385278037FF0075A162 /* BasicDS */ = {
+			isa = PBXGroup;
+			children = (
+				0989139827803E410075A162 /* Protocols */,
+				0989138C278038200075A162 /* StackADT.swift */,
+				098913902780382D0075A162 /* QueueADT.swift */,
+				0989138E278038270075A162 /* LinkedListADT.swift */,
+				0989139427803A480075A162 /* DequeADT.swift */,
+				0989139627803A530075A162 /* DoublyLinkedListADT.swift */,
+			);
+			path = BasicDS;
+			sourceTree = "<group>";
+		};
+		0989139827803E410075A162 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				098913862780380C0075A162 /* LinkedList.swift */,
+				09891388278038120075A162 /* Queue.swift */,
+				0989138A278038180075A162 /* Stack.swift */,
+				0989139227803A400075A162 /* Deque.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 		09B9F1D5245A643500FC417E = {
@@ -97,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				09B9F1E2245A643500FC417E /* DataStructures.h */,
+				09891385278037FF0075A162 /* BasicDS */,
 				0989138127801A750075A162 /* GraphUtils.swift */,
 				0989137D278018400075A162 /* AdjacencyList.swift */,
 				0989137F2780184B0075A162 /* AdjacencyMatrix.swift */,
@@ -225,11 +271,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				098913872780380C0075A162 /* LinkedList.swift in Sources */,
 				0989137C278012950075A162 /* Graph.swift in Sources */,
 				0989137827800FEA0075A162 /* Edge.swift in Sources */,
 				0989137627800E6B0075A162 /* Vertex.swift in Sources */,
+				0989138D278038200075A162 /* StackADT.swift in Sources */,
 				0989138227801A750075A162 /* GraphUtils.swift in Sources */,
+				0989139527803A480075A162 /* DequeADT.swift in Sources */,
+				0989138F278038270075A162 /* LinkedListADT.swift in Sources */,
+				098913912780382D0075A162 /* QueueADT.swift in Sources */,
+				0989139327803A400075A162 /* Deque.swift in Sources */,
+				0989138B278038180075A162 /* Stack.swift in Sources */,
+				0989139727803A530075A162 /* DoublyLinkedListADT.swift in Sources */,
+				09891389278038120075A162 /* Queue.swift in Sources */,
 				0989137E278018400075A162 /* AdjacencyList.swift in Sources */,
+				09891384278032E80075A162 /* GraphTraversal.swift in Sources */,
 				0989137A2780121D0075A162 /* EdgeType.swift in Sources */,
 				098913802780184B0075A162 /* AdjacencyMatrix.swift in Sources */,
 			);

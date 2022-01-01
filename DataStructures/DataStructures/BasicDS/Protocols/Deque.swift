@@ -1,5 +1,5 @@
 //
-//  AdjacencyMatrix.swift
+//  Deque.swift
 //  DataStructures
 //
 //  Created by Ankur Prakash on 01/01/22.
@@ -7,7 +7,3 @@
 //
 
 import Foundation
-
-public class AdjacencyMatrix<Element> {
-    
-}

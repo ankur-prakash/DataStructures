@@ -8,6 +8,8 @@
 
 import Foundation
 
+public typealias GraphADT = AdjacencyList<String>
+
 public enum GraphAttribute {
     
     public enum FormationType {
@@ -42,9 +44,7 @@ public enum GraphAttribute {
 }
 
 public final class GraphUtils {
-   
-    public typealias GraphADT = AdjacencyList<String>
-    
+       
     static func buildGraph(weightType: GraphAttribute.EdgeWeight = .unweighted,
                            vertexConnection: GraphAttribute.VertexConnectivity = .connected,
                            edgeConnectionType: GraphAttribute.EdgeConnectionType = .acyclic,
