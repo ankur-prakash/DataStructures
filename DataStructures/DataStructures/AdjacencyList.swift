@@ -45,10 +45,46 @@ extension AdjacencyList: Graph {
 extension AdjacencyList: GraphTraversal {
     
     public func breathFirstSearch(from source: Vertex<Element>) -> [Vertex<Element>] {
-        return[]
+        typealias V = Vertex<Element>
+        var visited = [V]()
+        var queue = QueueADT<V>()
+        var pushedToQueue = Set<V>()
+        visited.append(source)
+        queue.enqueue(source)
+        pushedToQueue.insert(source)
+        while let vertex = queue.dequeue() {
+            edges(from: vertex).forEach {
+                if !pushedToQueue.contains($0.destination) {
+                    queue.enqueue($0.destination)
+                    pushedToQueue.insert($0.destination)
+                    visited.append($0.destination)
+                }
+            }
+        }
+        return visited
     }
     
     public func depthFirstSearch(from source: Vertex<Element>) -> [Vertex<Element>] {
-        return []
+        typealias V = Vertex<Element>
+        var pushedToStack = Set<V>()
+        var stack = StackADT<V>()
+        var visited = [V]()
+        stack.push(source)
+        visited.append(source)
+        pushedToStack.insert(source)
+        var next = source
+        while true {
+            if let nextVertex = edges(from: next).first(where: { !pushedToStack.contains($0.destination) })?.destination {
+                stack.push(nextVertex)
+                visited.append(nextVertex)
+                pushedToStack.insert(nextVertex)
+                next = nextVertex
+            } else if let popVertex = stack.pop() {
+                next = popVertex
+            } else {
+                break
+            }
+        }
+        return visited
     }
 }
