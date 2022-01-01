@@ -24,6 +24,13 @@ class DataStructuresTests: XCTestCase {
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
 
+    func testheap() {
+        var heap = Heap(>, elements: [-2,9,1,-10,3,11,14,17,3])
+        print(heap._elements)
+        while let element =  heap.remove() {
+            print(element)
+        }
+    }
     func testPerformanceExample() throws {
         // This is an example of a performance test case.
         self.measure {

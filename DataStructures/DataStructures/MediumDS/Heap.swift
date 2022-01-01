@@ -8,7 +8,8 @@
 
 import Foundation
 
-public struct Heap<Element: Comparable> {
+public struct Heap<Element: Equatable> {
+    
     public typealias SortFunction = (Element, Element) -> Bool
     private(set) var _elements: [Element]
     private(set) var _sortFunc: SortFunction

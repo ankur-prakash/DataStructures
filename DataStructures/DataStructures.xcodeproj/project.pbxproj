@@ -27,6 +27,7 @@
 		0989139B278087110075A162 /* Dijkstra.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0989139A278087110075A162 /* Dijkstra.swift */; };
 		0989139D278087160075A162 /* Prim.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0989139C278087160075A162 /* Prim.swift */; };
 		098913A0278089460075A162 /* Heap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0989139F278089460075A162 /* Heap.swift */; };
+		098913A227809D970075A162 /* PriorityQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098913A127809D970075A162 /* PriorityQueue.swift */; };
 		09B9F1E9245A643500FC417E /* DataStructures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09B9F1DF245A643500FC417E /* DataStructures.framework */; };
 		09B9F1EE245A643500FC417E /* DataStructuresTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B9F1ED245A643500FC417E /* DataStructuresTests.swift */; };
 		09B9F1F0245A643500FC417E /* DataStructures.h in Headers */ = {isa = PBXBuildFile; fileRef = 09B9F1E2245A643500FC417E /* DataStructures.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -63,6 +64,7 @@
 		0989139A278087110075A162 /* Dijkstra.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dijkstra.swift; sourceTree = "<group>"; };
 		0989139C278087160075A162 /* Prim.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prim.swift; sourceTree = "<group>"; };
 		0989139F278089460075A162 /* Heap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heap.swift; sourceTree = "<group>"; };
+		098913A127809D970075A162 /* PriorityQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriorityQueue.swift; sourceTree = "<group>"; };
 		09B9F1DF245A643500FC417E /* DataStructures.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DataStructures.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		09B9F1E2245A643500FC417E /* DataStructures.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataStructures.h; sourceTree = "<group>"; };
 		09B9F1E3245A643500FC417E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -139,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				0989139F278089460075A162 /* Heap.swift */,
+				098913A127809D970075A162 /* PriorityQueue.swift */,
 			);
 			path = MediumDS;
 			sourceTree = "<group>";
@@ -301,6 +304,7 @@
 				0989137827800FEA0075A162 /* Edge.swift in Sources */,
 				0989137627800E6B0075A162 /* Vertex.swift in Sources */,
 				0989138D278038200075A162 /* StackADT.swift in Sources */,
+				098913A227809D970075A162 /* PriorityQueue.swift in Sources */,
 				0989138227801A750075A162 /* GraphUtils.swift in Sources */,
 				0989139527803A480075A162 /* DequeADT.swift in Sources */,
 				0989138F278038270075A162 /* LinkedListADT.swift in Sources */,
