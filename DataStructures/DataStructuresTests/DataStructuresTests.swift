@@ -31,6 +31,13 @@ class DataStructuresTests: XCTestCase {
             print(element)
         }
     }
+    
+    func testPrimAlgo() {
+        let graph = GraphUtils.buildSimpleUndiretedWeightedGraph()
+        let args = Prim.getMinimumSpanningTree(for: graph)
+        print("args = \(args.cost)")
+        print(args.mst)
+    }
     func testPerformanceExample() throws {
         // This is an example of a performance test case.
         self.measure {

@@ -20,7 +20,7 @@ import Foundation
 
 public class Prim<Element: Equatable & Hashable> {
     
-    public func getMinimumSpanningTree(for graph: AdjacencyList<Element>)
+    public static func getMinimumSpanningTree(for graph: AdjacencyList<Element>)
     -> (mst: AdjacencyList<Element>, cost: Double) {
         var cost = 0.0
         let mst = AdjacencyList<Element>()
@@ -31,6 +31,7 @@ public class Prim<Element: Equatable & Hashable> {
         guard let start = graph.adjacencies.keys.first else {
             return (mst: mst, cost: cost)
         }
+        mst.copyVertices(graph: graph)
         graph.edges(from: start).forEach {
             minEdgePriorityQueue.enqueue($0)
         }
@@ -47,7 +48,9 @@ public class Prim<Element: Equatable & Hashable> {
             cost += smallestEdge.weight ?? 0.0
             visited.insert(destination)
             graph.edges(from: destination).forEach {
-                minEdgePriorityQueue.enqueue($0)
+                if !visited.contains($0.destination) {
+                    minEdgePriorityQueue.enqueue($0)
+                }
             }
         }
         return (mst: mst, cost: cost)

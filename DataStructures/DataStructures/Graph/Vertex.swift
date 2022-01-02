@@ -22,3 +22,6 @@ public struct Vertex<Element> {
 extension Vertex:Hashable where Element: Hashable {}
 extension Vertex:Equatable where Element:Equatable {}
 
+extension Vertex: CustomStringConvertible {
+    public var description: String { "\(data)" }
+}

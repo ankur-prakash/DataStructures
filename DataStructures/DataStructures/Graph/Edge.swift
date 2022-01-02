@@ -21,3 +21,7 @@ public struct Edge<Element> {
         self.weight = weight
     }
 }
+
+extension Edge: CustomStringConvertible {
+    public var description: String { "\(source) -> \(destination) (\(weight ?? 0.0)" }
+}

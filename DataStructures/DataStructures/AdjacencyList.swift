@@ -88,3 +88,30 @@ extension AdjacencyList: GraphTraversal {
         return visited
     }
 }
+
+extension AdjacencyList: CustomStringConvertible {
+    public var description: String {
+        var result = ""
+        for (vertex, edges) in adjacencies { // 1
+            var edgeString = ""
+            for (index, edge) in edges.enumerated() { // 2
+                if index != edges.count - 1 {
+                    edgeString.append("\(edge.destination), ")
+                } else {
+                    edgeString.append("\(edge.destination)")
+                }
+            }
+            result.append("\(vertex) ---> [ \(edgeString) ]\n") // 3
+        }
+        return result
+    }
+}
+
+extension AdjacencyList {
+    
+    func copyVertices(graph: AdjacencyList) {
+        Array(graph.adjacencies.keys).forEach {
+            adjacencies[$0] = []
+        }
+    }
+}
