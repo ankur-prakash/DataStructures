@@ -96,6 +96,24 @@ public final class GraphUtils {
         return graph
     }
     
+    static func specialbuildSimpleUndiretedWeightedGraph() -> AdjacencyMatrix<String> {
+        
+        let graph = AdjacencyMatrix<String>()
+        var vertexMap = [String: Vertex<String>]()
+        ["A", "B", "C", "D","E", "F", "G", "H"].forEach {
+            vertexMap[$0] =  graph.createVertex($0)
+        }
+        graph.add(.undirected, source: vertexMap["A"]!, destination: vertexMap["B"]!, weight: 200)
+        graph.add(.undirected, source: vertexMap["B"]!, destination: vertexMap["C"]!, weight: 100)
+        graph.add(.undirected, source: vertexMap["C"]!, destination: vertexMap["D"]!, weight: 30.0)
+        graph.add(.undirected, source: vertexMap["D"]!, destination: vertexMap["A"]!, weight: 80.0)
+        graph.add(.undirected, source: vertexMap["A"]!, destination: vertexMap["H"]!, weight: 90.0)
+        graph.add(.undirected, source: vertexMap["B"]!, destination: vertexMap["G"]!, weight: 9.0)
+        graph.add(.undirected, source: vertexMap["C"]!, destination: vertexMap["F"]!, weight: 62.0)
+        graph.add(.undirected, source: vertexMap["C"]!, destination: vertexMap["E"]!, weight: 55.0)
+        return graph
+    }
+    
     static func buildSimpleDirectedWeightedGraph() -> GraphADT {
         let graph = GraphADT()
         var vertexMap = [String: Vertex<String>]()
@@ -128,6 +146,19 @@ public final class GraphUtils {
         graph.add(.directed, source: vertexMap["B"]!, destination: vertexMap["G"]!, weight: nil)
         graph.add(.directed, source: vertexMap["C"]!, destination: vertexMap["F"]!, weight: nil)
         graph.add(.directed, source: vertexMap["C"]!, destination: vertexMap["E"]!, weight: nil)
+        return graph
+    }
+    
+    static func buildStarWeightedGraph() -> GraphADT {
+        
+        let graph = GraphADT()
+        var vertexMap = [String: Vertex<String>]()
+        ["A", "B", "C", "D"].forEach {
+            vertexMap[$0] =  graph.createVertex($0)
+        }
+        graph.add(.undirected, source: vertexMap["A"]!, destination: vertexMap["B"]!, weight: nil)
+        graph.add(.undirected, source: vertexMap["A"]!, destination: vertexMap["C"]!, weight: nil)
+        graph.add(.undirected, source: vertexMap["A"]!, destination: vertexMap["D"]!, weight: nil)
         return graph
     }
     

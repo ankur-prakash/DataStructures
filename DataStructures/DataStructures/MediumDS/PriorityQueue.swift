@@ -15,6 +15,8 @@ public struct PriorityQueue<Element: Equatable> {
     public init(_ sort: @escaping SortFunction) {
         self._heap = Heap<Element>(sort)
     }
+    
+    public var count: Int { _heap.count }
 }
 
 extension PriorityQueue: Queue {

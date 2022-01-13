@@ -23,5 +23,5 @@ public struct Edge<Element> {
 }
 
 extension Edge: CustomStringConvertible {
-    public var description: String { "\(source) -> \(destination) (\(weight ?? 0.0)" }
+    public var description: String { "\(source) -> \(destination) \(weight ?? 0.0)" }
 }

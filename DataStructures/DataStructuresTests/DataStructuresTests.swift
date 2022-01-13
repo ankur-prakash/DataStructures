@@ -24,6 +24,33 @@ class DataStructuresTests: XCTestCase {
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
 
+    func testMatrix() {
+        let list = GraphUtils.buildSimpleUndiretedWeightedGraph()
+        list.vertices.forEach {
+            print("Edges for \($0.data) =>", list.edges(from: $0))
+        }
+        
+        let matrix = GraphUtils.specialbuildSimpleUndiretedWeightedGraph()
+        matrix.vertices.forEach {
+            print("Edges for \($0.data) =>", matrix.edges(from: $0))
+        }
+//        print(breathFirstSearch(from: list.vertices[0], graph: list))
+//        print(depthFirstSearch(from: list.vertices[0], graph: list))
+//        print(depthFirstSearch(from: list.vertices[0], graph: matrix))
+//        let a = list.vertices.first(where: {$0.data == "A" })!
+//        let f = list.vertices.first(where: {$0.data == "F" })!
+//        print("Dijkstra = ", Dijkstra(list).shortestRoute(from: a, destination: f))
+//        print("prim = ", Prim.generateMST(list))
+        let root = RootedTree.rootedTree(list)
+        
+        print("Rooted tree = \(TreeCentre.findCentre(list))")
+    }
+    
+    func testCentreOfTheTree() {
+       let graph =  GraphUtils.buildStarWeightedGraph()
+        print("Rooted tree = \(TreeCentre.findCentre(graph))")
+    }
+    
     func testheap() {
         var heap = Heap(>, elements: [-2,9,1,-10,3,11,14,17,3])
         print(heap._elements)
@@ -33,10 +60,11 @@ class DataStructuresTests: XCTestCase {
     }
     
     func testPrimAlgo() {
-        let graph = GraphUtils.buildSimpleUndiretedWeightedGraph()
-        let args = Prim.getMinimumSpanningTree(for: graph)
-        print("args = \(args.cost)")
-        print(args.mst)
+//        let graph = GraphUtils.buildSimpleUndiretedWeightedGraph()
+//        print("LEAST: \(graph.nodesWithLeastNeighbours())")
+//        let args = Prim.getMinimumSpanningTree(for: graph)
+//        print("args = \(args.cost)")
+//        print(args.mst)
     }
     func testPerformanceExample() throws {
         // This is an example of a performance test case.
@@ -45,4 +73,10 @@ class DataStructuresTests: XCTestCase {
         }
     }
 
+//    func giveMeGraph<T: Hashable>(type: Bool) -> AnyGraph<T> {
+//        if type {
+//            return AnyGraph(AdjacencyList<T>())
+//        }
+//        return AnyGraph(AdjacencyMatrix<T>())
+//    }
 }

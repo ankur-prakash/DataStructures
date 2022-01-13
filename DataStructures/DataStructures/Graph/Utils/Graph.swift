@@ -12,10 +12,10 @@ public protocol Graph {
     associatedtype Element
     func createVertex(_ data: Element) -> Vertex<Element>
     func addDirectedEdge(source: Vertex<Element>, destination: Vertex<Element>, weight: Double?)
-    func addUndirectedEdge(source: Vertex<Element>, destination: Vertex<Element>, weight: Double?)
-    func add(_ edgeType: EdgeType, source: Vertex<Element>, destination: Vertex<Element>, weight: Double?)
-    func edges(from source: Vertex<Element>) -> [Edge<Element>]
-    func weight(from source: Vertex<Element>, destination: Vertex<Element>) -> Double?
+//    func addUndirectedEdge(source: Vertex<Element>, destination: Vertex<Element>, weight: Double?)
+//    func add(_ edgeType: EdgeType, source: Vertex<Element>, destination: Vertex<Element>, weight: Double?)
+//    func edges(from source: Vertex<Element>) -> [Edge<Element>]
+//    func weight(from source: Vertex<Element>, destination: Vertex<Element>) -> Double?
 }
 
 
